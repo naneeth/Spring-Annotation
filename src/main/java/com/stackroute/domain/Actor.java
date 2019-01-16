@@ -5,7 +5,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:application.properties")
 public class Actor {
     private String name;
     private String gender;
@@ -30,7 +29,6 @@ public class Actor {
         return name;
     }
 
-    @Value("${actor.name}")
     public void setName(String name) {
         this.name = name;
     }
@@ -39,7 +37,6 @@ public class Actor {
         return gender;
     }
 
-    @Value("${actor.gender}")
     public void setGender(String gender) {
         this.gender = gender;
     }
@@ -47,7 +44,7 @@ public class Actor {
     public int getAge() {
         return age;
     }
-    @Value("${actor.age}")
+
     public void setAge(int age) {
         this.age = age;
     }

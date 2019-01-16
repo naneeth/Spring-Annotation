@@ -9,7 +9,7 @@ public class Movie {
     @Autowired
     private Actor actor;
 
-
+    @Autowired
     public Movie() {
 
     }
